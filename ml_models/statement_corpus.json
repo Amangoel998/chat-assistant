@@ -1,0 +1,269 @@
+{
+    "intents":[
+
+        {"tag": "number-of-hosts",
+            "patterns": ["How many hosts are ther", "Give me number of hosts", "Tell me the Number of hosts", "Number of esxi servers", "List the number of esxi servers in vCenter server", "Show esxi server in vCenter", "Show hosts in vCenter", "List the number of host servers in vCenter", "How many esxi servers are managed by vCenter", "How many hosts are managed by vCente"],
+            "responses":["Here are the number of hosts: "],
+            "contexts":[]
+        },
+
+        {"tag": "number-of-host-in-dc",
+            "patterns":["How many hosts in datacenter", "How many esxi servers in datacenter", "List the number of hosts servers in datacenter", "Show hosts in Datacenter", "Show esxi server is datacenter", "List the number of esxi servers in datacenter"],
+            "responses":["Number of hosts in datacenter: "],
+            "contexts":[]
+        },
+
+        {"tag": "number-of-host-in-cls",
+            "patterns":["How many hosts in cluster", "How many esxi servers in Cluster", "List the number of hosts servers in Cluster", "Show hosts in Cluster", "Show esxi servers in cluster", "List the number of ESXi servers in Cluster"],
+            "responses":["Number of hosts in cluster: "],
+            "contexts":[]
+        },
+
+        {"tag": "host-info-hw",
+            "patterns":["Show host summary", "What is the host hardware", "What is the esxi hardware", "Show host hardware", "Show esxi hardware configuration", "Which hardware is the host running on"],
+            "responses":["Here is the host hardware info: "],
+            "contexts":[]
+        },
+
+        {"tag": "host-filter-by-hw-ven",
+            "patterns":["Which host has dell hardware", "Which host has Hpe hardware", "Which host has lenovo hardware"],
+            "responses":["Here are the number of hosts having %vendor% hardware: "],
+            "contexts":[]
+        },
+
+        {"tag": "host-mgmt-ip",
+            "patterns":["Show Host management IP", "What is the host management IP"],
+            "responses":["This is the management ip of the host: "],
+            "contexts":[]
+        },
+
+        {"tag": "host-connection-status",
+            "patterns":["Show host connection status", "What is the connection status of the host"],
+            "responses":["host is: "],
+            "contexts":[]
+        },
+
+        {"tag": "disconnected-hosts",
+            "patterns":["Show disconnected host", "List hosts that are not connected", "List disconnected hosts"],
+            "responses":["Hosts that are disconnected: "],
+            "contexts":[]
+        },
+
+        {"tag": "number-disconnected-hosts",
+            "patterns":["How many hosts are disconnected", "What is the number of disconnected hosts", "How many hosts are not connected"],
+            "responses":["Number of hosts that are disconnected: "],
+            "contexts":[]
+        },
+
+        {"tag": "connected-hosts",
+            "patterns":["Show connected host", "List hosts that are connected", "Show hosts that are connected"],
+            "responses":["Hosts that are connected: "],
+            "contexts":[]
+        },
+
+        {"tag": "number-connected-hosts",
+            "patterns":["How many hosts are connected", "What is the number of connected hosts", "How many hosts are connected"],
+            "responses":["Number of hosts that are connected: "],
+            "contexts":[]
+        },
+
+        {"tag": "mm-hosts",
+            "patterns":["Show hosts in maintenance mode", "List hosts that are in maintenance mode"],
+            "responses":["Hosts that are in maintenance mode: "],
+            "contexts":[]
+        },
+
+        {"tag": "number-mm-hosts",
+            "patterns":["How many hosts are in maintenance mode", "What is the number of hosts that are in maintenance mode", "Which hosts are in maintenance mode"],
+            "responses":["Number of hosts that are not responding: "],
+            "contexts":[]
+        },
+
+        {"tag": "non-responsive-hosts",
+            "patterns":["Which hosts are non responsive", "Show hosts that are not responding", "List non responsive hosts", "Which hosts are not responding"],
+            "responses":["Hosts that are not responding: "],
+            "contexts":[]
+        },
+
+        {"tag": "number-non-responsive-hosts",
+            "patterns":["How many hosts are not responding", "What is the number of hosts that are non responsive", "What is the number of hosts that are not responding"],
+            "responses":["number of hosts that are in maintenance mode: "],
+            "contexts":[]
+        },
+
+        {"tag": "number-of-ds",
+            "patterns":["How many datastores in vCenter", "How many datastores are there", "Number of datastores", "List the datastores"],
+            "responses":["Number of datastores :"],
+            "contexts":[]
+        },
+
+        {"tag": "number-of-ds-in-dc",
+            "patterns":["How many datastores in datacenter", "How many datastores are there in datacenter", "Number of datastores in datacenter", "List the datastores in datacenter"],
+            "responses":["Number of datastores in datacenter: "],
+            "contexts":[]
+        },
+
+        {"tag": "ds-info",
+            "patterns":["List datastore summary", "Give me datastore info", "Provide datastore information", "What type of datastore", "Show datastore info"],
+            "responses":["Here is the datastore info: "],
+            "contexts":[]
+        },
+
+        {"tag": "ds-filter-by-fs",
+            "patterns":["Filter datastore by type", "Show datastore by type", "Show datastore by filesystem", "Filter datastore by filesystem", ""],
+            "responses":["Here are datastores filtered by type: "],
+            "contexts":[]
+        },
+
+        {"tag": "ds-size",
+            "patterns":["What is the size of the datastore", "Tell me the size of the datastore", "What size is the datastore"],
+            "responses":["Size of datastore is: "],
+            "contexts":[]
+        },
+
+        {"tag": "number-of-vm",
+            "patterns":["List the total number of VMs", "List number of virtual machines in vCenter server", "List virtual machines in vCenter", "List number od VMs in vCenter", "Number of VMs in vCenter"],
+            "responses":["Here are the number of VMs: "],
+            "contexts":[]
+        },
+
+        {"tag": "number-of-vm-in-dc",
+            "patterns":["Show virtual machines in datacenter", "List virtual machines in datacenter", "Number of virtual machines in datacenter", "How many virtual machines in datacenter", "List VM in datacenter", "Number of vm in datacenter", "How many VM in datacenter"],
+            "responses":["Number of VMs in datacenter: "],
+            "contexts":[]
+
+        },
+
+        {"tag": "number-of-vm-in-cls",
+            "patterns":["Show virtual machines in cluster", "List virtual machines in cluster", "Number of virtual machines in cluster", "How many virtual machines in the cluster",  "List VM in cluster", "Number of VM in Cluster", "How many vm in the Cluster"],
+            "responses":["Number of VMs in cluster: "],
+            "contexts":[]
+        },
+
+        {"tag": "number-of-vm-on-host",
+            "patterns":["Show number of virtual machines on ESXi host", "List virtual machines in ESXi host", "Number of Virtual machines in ESXi server", "How many virtual machines in ESXi server", "Many VMs on host", "List number of VMs running on ESXi host", "Number of VM running on ESXi server", "Number of VMs on ESXi"],
+            "responses":["Number of VMs running on host: "],
+            "contexts":[]
+        },
+
+        {"tag": "vm-on-host",
+            "patterns":["Show virtual machines on ESXi host", "Information of virtual machines in ESXi host", "Information of Virtual machines in ESXi server", "What are virtual machines in ESXi server", "Whhich VMs on host", "List the VMs running on ESXi host", "VM running on ESXi server", "VMs on ESXi"],
+            "responses":["VMs running on the Host: "],
+            "contexts":[]
+        },
+
+        {"tag": "vm-info",
+            "patterns":["Show VM summary", "What is the VM config", "Display VM summary", "What is the virtual machine configuration", "Show VM config","Show VM info"],
+            "responses":["VM Summary: "],
+            "contexts":[]
+        },
+
+        {"tag": "vm-pwr-on",
+            "patterns":["Which virtual machines are powered on", "Which VMs are powered on", "Show powered on Virtual machines", "List VMs that  powered on","Show powered on VMs", "Show running VMs", "List running VMs"],
+            "responses":["VMs that are powered on: "],
+            "contexts":[]
+        },
+
+        {"tag": "vm-pwr-off",
+            "patterns":["Which virtual machines are powered off", "Which VMs are powered off", "Show powered off Virtual machines", "List VMs that are powered off","show stopped VMs", "list stopped VMs","show powered off VMs"],
+            "responses":["VMs that are powered off: "],
+            "contexts":[]
+        },
+
+        {"tag": "vm-info-tool-status",
+            "patterns":["What is the tools status on VM", "What is the vmware tools status on virtual machine"],
+            "responses":["vmtools status of VM: "],
+            "contexts":[]
+        },
+
+        {"tag": "vm-info-tool-ver",
+            "patterns":["What is the vmtools version on virtual machine", "What is the vmware tools version on virtual machine", "What is the vmtool version on VM"],
+            "responses":["VMTool version of VM: "],
+            "contexts":[]
+        },
+
+        {"tag": "vm-with-snap",
+            "patterns":["Show VM with snapshot", "List VMs with snapshot"],
+            "responses":["VMs with snapshot: "],
+            "contexts":[]
+        },
+
+        {"tag": "vm-snap-info",
+            "patterns":["List snapshot for VM", "Show snapshots for VM", "Show snapshots for virtual machine", "List snapshots for virtual machine"],
+            "responses":["Snapshot info of the VM: "],
+            "contexts":[]
+        },
+
+        {"tag": "vm-guest-info",
+            "patterns":["What is the Guest OS of this VM", "Which Guest OS is running on this virtual machine", "Show virtual machine operating system", "Which operating system is running inside the VM", "Which operating system in installed inside the VM","Show VM guest info"],
+            "responses":["Guest OS info: "],
+            "contexts":[]
+        },
+
+        {"tag": "ask-host",
+            "patterns":[],
+            "responses":["Specify the host name", "Please give host name", "Provide host name"],
+            "contexts":["host-info-hw", "vm-on-host", "host-mgmt-ip", "number-of-vm-on-host", "host-connection-status"]
+        },
+
+        {"tag": "ask-dc",
+            "patterns":[],
+            "responses":["Specify the datacenter name", "Please give datacenter name", "Provide datacenter name"],
+            "contexts":["number-of-host-in-dc", "number-of-ds-in-dc", "number-of-vm-in-dc"]
+        },
+
+        {"tag": "ask-cluster",
+            "patterns":[],
+            "responses":["Specify the cluster name", "Please give cluster name", "Provide cluster name"],
+            "contexts":["number-of-host-in-cls", "number-of-vm-in-cls"]
+        },
+
+        {"tag": "ask-ds",
+            "patterns":[],
+            "responses":["Specify the datastore name", "Please give datastore name", "Provide datastore name"],
+            "contexts":["ds-info", "ds-size"]
+        },
+
+        {"tag": "ask-ds-type",
+            "patterns":[],
+            "responses":["Specify the filesystem", "Provide filesystem name"],
+            "contexts":["ds-filter-by-fs"]
+        },
+
+        {"tag": "ask-vm",
+            "patterns":[],
+            "responses":["Specify the virtual machine name", "Please give virtual machine name", "Provide virtual machine name" ],
+            "contexts":["vm-info", "vm-info-tool-status", "vm-info-tool-ver", "vm-snap-info", "vm-guest-info"]
+        },
+
+        {"tag": "common-greeting",
+            "patterns": ["Hi there", "How are you", "How are you doing", "Hello", "Good day", "Yo", "Hey"],
+            "responses": ["Hello", "Good to see you", "Hi there, how can I help you", "Hello, I'm good"],
+            "contexts": []
+        },
+
+        {"tag": "common-goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+            "responses": ["See you!", "Have a nice day", "Bye! Have a great day!."],
+            "contexts": []
+        },
+
+        {"tag": "common-thanks",
+            "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+            "responses": ["Happy to help!", "Any time!", "My pleasure"],
+            "contexts": []
+        },
+
+        {"tag": "noanswer",
+            "patterns": [],
+            "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+            "contexts": []
+        },
+
+        {"tag": "common-options",
+            "patterns": ["How can you help me", "What can you do", "What help you provide", "How you can be helpful", "What support is offered", "What use are you to me", "What could you do", "What is your purpose"],
+            "responses": ["I can help you provide the information about your vSphere environment"],
+            "contexts": []
+        }
+    ]
+}
